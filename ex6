@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<button onclick="testar()">Testar</button>
+
+
+<input type="text" id="campo">
+
+
+
+<script>
+function testar() {
+
+
+  var palavra = document.getElementById("campo").value;//pega a palavra no campo onde o usuário digitou
+  
+var MetadeDaPalavra= Math.floor(palavra.length / 2); //Identifica o tamanho da palavra e divide na metade
+
+
+  for (var i = 0; i < MetadeDaPalavra; i++){//percorre cada caractere do início até o meio da palavra.
+
+
+    if (palavra[i] !== palavra[palavra.length - i - 1]){ //compara os caracteres iníciais com os ultimos. Se por exemplo a primeira letra for diferente da ultima a palabra não é palindroma
+      var palindroma = false;
+      break;//se a palabra não é palindroma já nem precisa verificar o restante, o break já finaliza o for
+      }
+      var palindroma = true;
+  }
+  if(palindroma){
+      alert("A palavra é palindroma");
+  }
+  else{
+      alert("A palavra não é palindroma");
+  }
+
+
+}
+</script>
+
+
+</body>
+</html>
