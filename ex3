@@ -1,0 +1,34 @@
+<head>
+
+    <script language="Javascript">
+function skin1()
+{
+document.bgColor='red';
+}
+function skin2()
+{
+document.bgColor='green';
+}
+function skin3()
+{
+document.bgColor='yellow';
+}
+function skin4()
+{
+document.bgColor='#FFFFCC';
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form name="cores">
+<input type="radio" name="campo" onclick="skin1();">Fundo vermelho<br>
+<input type="radio" name="campo" onclick="skin2();">Fundo verde<br>
+<input type="radio" name="campo" onclick="skin3();">Fundo amarelo<br>
+<input type="radio" name="campo" onclick="skin4();">Fundo amarelo<br>
+</form>
+
+</body>
