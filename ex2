@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+<h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Vermelho</h1>
+<h1 onmouseover="style.color='blue'" onmouseout="style.color='black'">Azul</h1>
+<h1 onmouseover="style.color='green'" onmouseout="style.color='black'">Verde</h1>
+<h1 onmouseover="style.color='yellow'" onmouseout="style.color='black'">Amarelo</h1>
+</script>
+</body>
+</html>
