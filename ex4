@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<script>
+
+    function Mudarestado(divid){
+    
+     document.getElementById(divid).style.display = "none";
+    
+    }
+    
+    </script>
+    
+    <html>
+    
+    <div id=1>Clique para ocultar</div><input type="button" onclick="Mudarestado(1)">
+    
+    </html>
