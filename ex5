@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exercício1</title>
+        <style>
+            body{
+                background-color: rgb(97, 117, 230);
+                color: white;
+                font: normal 20pt Arial;
+                
+            }
+        </style>
+    </head>
+<body>
+    <form class="pure-form">
+        <fieldset>
+            <legend>Confirmação de Senha </legend>
+            <input type="login" placeholder="login" id="login"required>
+            <input type="password" placeholder="Senha" id="password" required>
+            <input type="password" placeholder="Confirme Senha" id="confirm_password" required>
+    
+            <button type="submit" class="pure-button pure-button-primary">Confirmar</button>
+        </fieldset>
+    </form>    
+    <h1>Bem vindo a página de cadastro</h1>
+    <script>
+      var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Senhas diferentes!");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+    </script>
+</body>
+</html>
